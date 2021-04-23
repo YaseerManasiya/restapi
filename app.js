@@ -13,7 +13,7 @@ mongoose
   .then(() => console.log("Connected"))
   .catch((err) => console.log(err));
 app.get("/", (req, res) => {
-  res.send("Lets build API");
+  res.send("Yaseer Manasiya");
 });
 app.use(express.json());
 app.use("/quote", quoteRoute);

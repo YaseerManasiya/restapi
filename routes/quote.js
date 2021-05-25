@@ -20,7 +20,6 @@ router.post("/", (req, res) => {
 });
 
 router.delete("/:quoteID", (req, res) => {
-  console.log(req.paramas);
   Quote.deleteOne({ _id: req.params.quoteID }) //confusion
     .then((data) => res.status(200).json({ message: "Quote deleted" }))
     .catch((err) => res.status(400).json({ message: err }));
